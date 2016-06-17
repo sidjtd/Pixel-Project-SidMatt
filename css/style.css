@@ -1,6 +1,6 @@
 #mainDiv{
   height: 200px;
-  width: 400px;
+  width: 404px;
 }
 
 #headDiv{
@@ -30,7 +30,25 @@
 
 #colorDiv{
   border: 2px solid black;
-  height: 300px;
+  height: 364px;
+  background-color: #888888;
+}
+
+.colorbox{
+  border: 2px solid #666666;
+  height:27px;
+  width: 42px;
+  /*float: left ;*/
+  border-radius: 15px;
+}
+.colorbox.pos_left {
+    /*position: relative;*/
+    left: 15px;
+}
+
+#colorBlack{
+  height:27px;
+  border: 2px solid #333333;
 }
 
 #draw{
@@ -44,9 +62,10 @@
     font-size: 20%;
     height: 8px;
     width: 8px;
-    border-style: solid;
+    border-style: dotted;
     border-color: gray;
     border-width: 0.5px;
+    border-radius:3px;
     background-color: white;
 
 }
@@ -54,43 +73,3 @@
 .pixelBox:hover {
     background-color: yellow;
 }
-/*something {
-    background-position: -10px 0px;
-    background-size: 520px 650px;
-    background-repeat: repeat;
-    background-color: gray;
-    justify-content: center;
-    text-justify: center;
-    text-align: center;
-    position:center;
-    width: 510px;
-    height: 655px;
-    line-height: 90px;
-    border-color: #000000;
-
-}
-
-div {
-    background-size: 80px 80px;
-    background-repeat: no-repeat;
-    background-color: lightblue;
-    border-color: #000000;
-    border-radius: 15px;
-    border-style: solid;
-    border-width:6px;
-    position:center;
-    margin: 8px;
-
-}
-
-.display {
-    background-size: 500px 300px;
-    background-position: -10px -100px;
-    background-color: #a6f1a6;
-    text-align: right;
-    height: 90px;
-    width: 473px;
-    float:top;
-}
-
-*/
