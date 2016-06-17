@@ -50,13 +50,14 @@ var colorArray = ['red', 'orange', 'yellow', 'lightgreen', 'green', 'blue', 'pur
 }
 */
 
-var colorHolder = 'orange';
+var colorHolder = 'black';
 
 function createEventListener(element){
   element.addEventListener('click', function(){
-    element.style.backgroundColor = colorHolder;
+    painting();
   });
 }
+
 
 function colorBoxes(element, color){
   element = document.createElement('div');
@@ -64,12 +65,17 @@ function colorBoxes(element, color){
   element.id = "color"+color;
   element.style.backgroundColor = color;
   colorDiv.appendChild(element);
-  console.log("what");
   element.addEventListener('click', function(){
+    console.log("color: ",color);
+    console.log("color Holder is also now",colorHolder);
+  colorHolder = color;
+    console.log("color Holder is also now",colorHolder);
+
+    //If you uncomment below, you can paint the unexpected.
+    //element.style.backgroundColor = colorHolder;
+    return colorHolder;
   });
 }
-
-
 
 function createGrid(){
   for (var i = 0; i < 41; i++){
@@ -86,6 +92,21 @@ function createGrid(){
   drawDiv.appendChild(pixelDiv);
   }
 }
+
+function painting(){
+  console.log("painting!!!");
+  document.getElementById("colorDiv").style.color = "'"+colorHolder+"'";
+  //this.pixelBox.style.backgroundColor = colorHolder;
+}
+
+function isHover(div) {
+  console.log((querySelector(':hover')));
+  return (div.querySelector(':hover') === div);
+}
+setInterval(function() {
+  console.log(isHover(document.getElementById('div')));
+}, 500);
+
 createGrid();
 //colorBoxes('div', 'green');
 //colorBoxes('div', 'red');
