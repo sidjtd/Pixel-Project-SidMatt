@@ -1,0 +1,57 @@
+.pixelBox {
+    font-family:Arial Black;
+    /*line-height: 20px;*/
+    float:right;
+    font-size: 20%;
+    height: 8px;
+    width: 8px;
+    border-style: solid;
+    border-color: orange;
+    border-width: 1px;
+    background-color: gray;
+
+}
+
+.pixelBox:hover {
+    background-color: yellow;
+}
+/*something {
+    background-position: -10px 0px;
+    background-size: 520px 650px;
+    background-repeat: repeat;
+    background-color: gray;
+    justify-content: center;
+    text-justify: center;
+    text-align: center;
+    position:center;
+    width: 510px;
+    height: 655px;
+    line-height: 90px;
+    border-color: #000000;
+
+}
+
+div {
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    background-color: lightblue;
+    border-color: #000000;
+    border-radius: 15px;
+    border-style: solid;
+    border-width:6px;
+    position:center;
+    margin: 8px;
+
+}
+
+.display {
+    background-size: 500px 300px;
+    background-position: -10px -100px;
+    background-color: #a6f1a6;
+    text-align: right;
+    height: 90px;
+    width: 473px;
+    float:top;
+}
+
+*/
