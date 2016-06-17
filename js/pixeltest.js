@@ -1,7 +1,6 @@
 
 // Load the main
 var mainDiv = document.getElementById('mainDiv');
-
 //-----------------------------------------------------
 //The following code is a prototype to dynamically creating the
 //divs. It is currently in progress. Keep if possible!
@@ -18,7 +17,6 @@ var mainDiv = document.getElementById('mainDiv');
 // }
 // divCreator(divCreatorArray[0]);
 //-----------------------------------------------------
-
 headDiv = document.createElement('div');
 headDiv.id = 'headDiv';
 mainDiv.appendChild(headDiv);
@@ -50,12 +48,12 @@ drawDiv = document.createElement('div');
 drawDiv.id = "draw";
 mainDiv.appendChild(drawDiv);
 
-
-var pixelDiv;
-var pixelBox;
+//The array that feeds into color pallete generating for loop
+var colorArray = ['red', 'orange', 'yellow', 'lightgreen', 'green', 'blue', 'purple',"Aqua","Aquamarine","Azure","Black"];
 
 var colorHolder = 'black';
-var colorArray = ['red', 'orange', 'yellow', 'lightgreen', 'green', 'blue', 'purple',"Aqua","Aquamarine","Azure","Black"];
+var pixelBox;
+var pixelDiv;
 
 function createClickListener(element){
   element.addEventListener('click', function(){
@@ -63,7 +61,7 @@ function createClickListener(element){
   });
 }
 
-
+// Make each Color Pallete
 function colorBoxes(element, color){
   element = document.createElement('div');
   element.className = "colorbox";
@@ -77,8 +75,8 @@ function colorBoxes(element, color){
     console.log("color Holder is also now",colorHolder);
 
     //If you uncomment below, you can paint the unexpected.
-    //element.style.backgroundColor = colorHolder;
-    return colorHolder;
+    element.style.backgroundColor = colorHolder;
+    //return colorHolder;
   });
 }
 
@@ -98,21 +96,24 @@ function createGrid(){
   }
 }
 
+
+
 function painting(){
   console.log("painting!!!");
   document.getElementById("colorDiv").style.color = "'"+colorHolder+"'";
-  //this.pixelBox.style.backgroundColor = colorHolder;
 }
 
-
+//The Grid is created
 createGrid();
-//colorBoxes('div', 'green');
-//colorBoxes('div', 'red');
 
-
+//ForLoop dynamically creates Color Pallete
 for(var j = 0; j<colorArray.length; j++){
 colorBoxes('div', colorArray[j]);
 }
+
+
+
+
 // function isHover(div) {
 //   console.log((querySelector(':hover')));
 //   return (div.querySelector(':hover') === div);
