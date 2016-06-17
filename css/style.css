@@ -1,3 +1,42 @@
+#mainDiv{
+  height: 200px;
+  width: 400px;
+}
+
+#headDiv{
+  border: 2px solid black ;
+  height: 30px;
+}
+
+#headSpan1{
+  border: 2px solid black ;
+}
+
+#headSpan2{
+  border: 2px solid black ;
+}
+
+#paintToolBar{
+  float: left;
+  border: 2px solid black;
+  width: 50px;
+  height: 470px;
+}
+
+#toolsDiv{
+  border: 2px solid black;
+  height: 100px;
+}
+
+#colorDiv{
+  border: 2px solid black;
+  height: 300px;
+}
+
+#draw{
+  float: center;
+}
+
 .pixelBox {
     font-family:Arial Black;
     /*line-height: 20px;*/
@@ -6,9 +45,9 @@
     height: 8px;
     width: 8px;
     border-style: solid;
-    border-color: orange;
-    border-width: 1px;
-    background-color: gray;
+    border-color: gray;
+    border-width: 0.5px;
+    background-color: white;
 
 }
 
