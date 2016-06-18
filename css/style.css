@@ -68,6 +68,7 @@ body{
 }
 
 #draw{
+<<<<<<< HEAD
   position: flex;
   width: 100%;
 }
@@ -76,6 +77,11 @@ body{
   display: flex;
   width: 100%;
   max-height: 702;
+=======
+  float: center;
+  width: 398px;
+  height: ;
+>>>>>>> 145aab8b07001c5caaa88d14d38f8d6a0ce033e3
 }
 
 .pixelBox {
@@ -83,11 +89,19 @@ body{
     font-family:Arial Black;
     /*line-height: 20px;*/
     font-size: 20%;
+<<<<<<< HEAD
     height: 25px;
     width: 25px;
     border-style: dotted;
     border-color: gray;
     border-width: 0.5px;
+=======
+    height: 8px;
+    width: 8px;
+    border-style: solid;
+    border-color: #999999;
+    border-width: 0.1px;
+>>>>>>> 145aab8b07001c5caaa88d14d38f8d6a0ce033e3
     background-color: white;
 
 }
