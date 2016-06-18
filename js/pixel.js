@@ -77,7 +77,6 @@ function createMouseUp(element){
     flag = false;
     return flag;
 }, false);
-
 }
 
 function createGrid(){
@@ -98,6 +97,24 @@ function createGrid(){
   drawDiv.appendChild(pixelDiv);
   }
 }
+
+toolBoxes('div','Clear');
+
+// Make each Tool Pallete
+function toolBoxes(element, tool){
+  element = document.createElement('div');
+  element.className = "toolbox";
+  element.id = "toolx";
+  element.style.backgroundColor = 'grey';
+  toolsDiv.appendChild(element);
+  element.addEventListener('click', (function(){
+    console.log("clicky");
+    pixelBox.style.backgroundColor = 'white';
+    console.log("clicky2");
+  //colorHolder = color;
+  }));
+}
+
 // Make each Color Pallete
 function colorBoxes(element, color){
   element = document.createElement('div');
