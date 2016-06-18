@@ -145,14 +145,18 @@ function colorBoxes(element, color){
   element.style.backgroundColor = color;
   colorDiv.appendChild(element);
   element.addEventListener('click', function(){
-    //console.log("1. color Holder used to be",colorHolder);
   colorHolder = color;
-    //console.log("2. color Holder is now",colorHolder);
-
-    //If you uncomment below, you can paint the unexpected.
-    //element.style.backgroundColor = 'black';
-    //return colorHolder;
   });
+  element.addEventListener('mouseover', function(){
+  hoverSwap();
+  });
+}
+
+function hoverSwap(){
+  testing = document.querySelectorAll('.pixelBox');
+  testing.style.border = colorHolder;
+  testing.style.borderWidth = '10px';
+  console.log(testing);
 }
 
 

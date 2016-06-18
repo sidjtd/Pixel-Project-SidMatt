@@ -1,6 +1,6 @@
 html{
   height: 1024px;
-  width: 980px;
+/*  width: 980px;*/
 }
 
 body{
@@ -111,6 +111,7 @@ body{
     background-color: white;
 }
 
-.pixelBox:hover {
-    background-color: yellow;
+/*.pixelBox:hover {
+    background-color: black;
 }
+*/
