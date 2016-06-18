@@ -79,12 +79,12 @@ function createMouseUp(element){
 }, false);
 }
 
-function createGrid(){
-  for (var i = 0; i < 41; i++){
+function createGrid(x,y){
+  for (var i = 0; i <= x; i++){
     pixelDiv = document.createElement('div');
     pixelDiv.className = "pixelDiv";
     pixelDiv.id = "pix" + i;
-    for (var j = 0; j < 41; j++) {
+    for (var j = 0; j <= y; j++) {
       pixelBox = document.createElement('span');
       pixelBox.className = "pixelBox";
       pixelBox.id = "pix" + i + j;
@@ -142,7 +142,7 @@ function painting(){
 }
 
 //The Grid is created
-createGrid();
+createGrid(32,16);
 
 //ForLoop dynamically creates Color Pallete
 for(var j = 0; j<colorArray.length; j++){
