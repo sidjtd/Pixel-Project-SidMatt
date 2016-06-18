@@ -105,14 +105,36 @@ function toolBoxes(element, tool){
   element = document.createElement('div');
   element.className = "toolbox";
   element.id = "toolx";
-  element.style.backgroundColor = 'grey';
+  element.style.backgroundColor = 'white';
+  element.innerHTML = 'CLEAR';
   toolsDiv.appendChild(element);
   element.addEventListener('click', (function(){
     console.log("clicky");
-    pixelBox.style.backgroundColor = 'white';
+    daSweep();
     console.log("clicky2");
   //colorHolder = color;
   }));
+}
+var sweepArray = [];
+
+// sweepSetup();
+
+// function sweepSetup (){
+//   for(j=0;j<3216;j++){
+//     sweepArray.push('pix'+j);
+//     console.log(sweepArray[j]);
+//       for(m=0;sweepArray.length;m++){
+//       daSweep(sweepArray[m].toString());
+//       }
+//   }
+// }
+
+function daSweep(sweepnum){
+ testing = document.querySelectorAll('.pixelBox');
+ for(j=0;j<testing.length;j++){
+ testing[j].style.backgroundColor = 'white';
+ console.log(testing);
+  }
 }
 
 // Make each Color Pallete

@@ -42,6 +42,13 @@ body{
 
   border: 2px solid black;
   height: 100px;
+
+}
+#toolx {
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
 }
 #toolsDiv{
 
@@ -90,6 +97,7 @@ body{
 }
 
 .pixelBox {
+
     display: flex;
     font-family:Arial Black;
     border-style: dotted;
@@ -100,7 +108,7 @@ body{
     border-style: solid;
     border-color: #999999;
     border-width: 0.1px;
-
+    background-color: white;
 }
 
 .pixelBox:hover {
