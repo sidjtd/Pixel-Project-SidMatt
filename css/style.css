@@ -53,6 +53,8 @@
 
 #draw{
   float: center;
+  width: 398px;
+  height: ;
 }
 
 .pixelBox {
@@ -62,10 +64,9 @@
     font-size: 20%;
     height: 8px;
     width: 8px;
-    border-style: dotted;
-    border-color: gray;
-    border-width: 0.5px;
-    border-radius:3px;
+    border-style: solid;
+    border-color: #999999;
+    border-width: 0.1px;
     background-color: white;
 
 }
