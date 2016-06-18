@@ -44,7 +44,7 @@ colorDiv.innerHTML = 'Colors';
 paintToolBar.appendChild(toolsDiv);
 paintToolBar.appendChild(colorDiv);
 
-drawDiv = document.createElement('span');
+drawDiv = document.createElement('div');
 drawDiv.id = "draw";
 mainDiv.appendChild(drawDiv);
 
